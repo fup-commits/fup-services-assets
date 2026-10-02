@@ -113,7 +113,7 @@
   }
 
   /* ── News fetch ── */
-  var NB='https://raw.githubusercontent.com/0sikH/fup-services-assets/main/news/';
+  var NB='https://raw.githubusercontent.com/fup-commits/fup-services-assets/main/news/';
   fetch(NB+'news-data.json?t='+Date.now()).then(function(r){return r.json()}).then(function(data){
     data.sort(function(a,b){return b.date.replace(/\./g,'')-a.date.replace(/\./g,'')});
     var grid=document.getElementById('homeNewsGrid');grid.innerHTML='';
